@@ -1,23 +1,24 @@
-#include<iostream>
-#inclode <cmath> 
+#include <iostream>
 using namespace std;
-int main(){
+int main() {
 	
-	int k, m;
-	double n, a=2;
-	int p;
-	p=pow(a,n);
-	cin>>k>>n>>m;
+	int k, n, m;
+	cin >> k >> n >> m;
+	int listnum = 1;
+	for (int i = 0; i < n; i++) {
+		listnum *= 2;
+	}
 	char like[m][2][2];
-	char mh[n][p];
+	char mh[n][listnum];
 	
-	for(int i=0; i<m; i++){
-		for(int j=0; j<2; j++){
-			cin>>like[i][j][0]>>like[i][j][1];
-			if(like[i][j][0]=='m'){
-				like[i][j][0]=0;
-			}else{
-				like[i][j][0]=1;
+	
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < 2; j++) {
+			cin >> like[i][j];
+			if (like[i][j][0] == 'm') {
+				like[i][j][0] = 0;
+			}else {
+				like[i][j][0] = 1;
 			}
 		}
 	}
