@@ -16,7 +16,6 @@ int main() {
 	int num[total_number];
 	for (int i = 0; i < total_number; i++) {
 		num[i] = int(number[i]) - '0';
-		cout << num[i];
 	}
 	
 	for (int i = 0; i < total_number; i++) {
