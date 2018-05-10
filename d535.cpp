@@ -29,7 +29,7 @@ int main() {
 		} 	
 	}
 	
-	if (password > 0)
+	if (password >= 0)
 		cout << password;
 	
  return 0; 
