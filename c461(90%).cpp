@@ -19,6 +19,8 @@ int main() {
 		cout << "XOR\n";
 		output++;
 	}
+	
+	
 	if (output == 0)
 	 cout << "IMPOSSIBLE";
 }
