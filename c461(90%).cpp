@@ -15,7 +15,7 @@ int main() {
 		cout << "OR\n";
 		output++;
 	}
-	if ((a == b) && (result == 0)){
+	if ((a != 0) && (b != 0) && (result == 0)){
 		cout << "XOR\n";
 		output++;
 	}
