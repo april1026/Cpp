@@ -20,6 +20,7 @@ int main() {
 		output++;
 	}
 	
+	cout << '\b';
 	
 	if (output == 0)
 	 cout << "IMPOSSIBLE";
