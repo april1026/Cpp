@@ -19,6 +19,10 @@ int main() {
 		cout << "XOR\n";
 		output++;
 	}
+	if ((a == 0) && (b == 0) && (result == 0)){
+		cout << "XOR\n";
+		output++;
+	}
 	if ((a != b) && (result != 0)){
 		cout << "XOR\n";
 		output++;
