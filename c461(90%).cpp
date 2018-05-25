@@ -15,12 +15,14 @@ int main() {
 		cout << "OR\n";
 		output++;
 	}
-	if ((a ^ b) == result){
+	if ((a == b) && (result == 0)){
 		cout << "XOR\n";
 		output++;
 	}
-	
-	cout << '\b';
+	if ((a != b) && (result != 0)){
+		cout << "XOR\n";
+		output++;
+	}
 	
 	if (output == 0)
 	 cout << "IMPOSSIBLE";
