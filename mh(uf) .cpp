@@ -58,6 +58,13 @@ int main() {
 		}
 	}
 	
+	for (int i = 0; i < listnum; i++) {
+		if (result[i] == 0)
+			cout << "BAD";
+		else
+		 cout << "GOOD";
+	}
+	
 	return 0;
 }
 //https://zerojudge.tw/ShowProblem?problemid=b065
