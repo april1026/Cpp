@@ -35,10 +35,10 @@ int main() {
                 if (race1[i][0]  == 1 || race2[j][0]  == 1|| race3[k][0] == 1) {
                     a = 1;
                 }
-				if (race1[i][1]  == 1 || race2[j][1]  == 1|| race3[k][1] == 1) {
+                if (race1[i][1]  == 1 || race2[j][1]  == 1|| race3[k][1] == 1) {
                     b = 1;
                 }
-				if (race1[i][2]  == 1 || race2[j][2]  == 1|| race3[k][2] == 1) {
+                if (race1[i][2]  == 1 || race2[j][2]  == 1|| race3[k][2] == 1) {
                     c = 1;
                 }
                 
