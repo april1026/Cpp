@@ -15,13 +15,11 @@ int main() {
     int yet[n];
     for (int i = 0; i < n; i++) {
         yet[i] = key[i] - input[i];
-        if (yet[i] == -8) {
-            yet[i] = 1;
-        } else if (yet[i] < 0) {
-            yet[i] += 10;
+        if (yet[i] < 0) {
+            yet[i] += 9;
         }
     }
-    
+
     int i = 1, times = 0;
     while (i <= 9) {
         bool temp = 0;
@@ -39,15 +37,25 @@ int main() {
                     for (int q = 0; q < k; q++) {
                         yet[j-q]--;
                     }
+                    times++;
                 }
             }
         }
         if (temp == 0) {
-            i++;
+            bool check = 0;
+            for (int q = 0; q < n; q++) {
+                if (yet[q] != 0 && yet[q] < i) {
+                    check = 1;
+                }
+            }
+            if (check)
+                i--;
+            else
+                i++;
         }
     }
-    
-    int check = 0;
+
+    bool check = 0;
     for (int i = 0; i < n; i++) {
         if (yet[i] != 0) {
             check = 1;
