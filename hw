@@ -7,13 +7,22 @@ int shift(char);
 
 int main() {
     string output;
-    while (!(cin.get() == '\n')) {
-        output += cin.get();
-    }
+    char a;
+    while (a = cin.get()) {
+    	if (a == '\n') {
+    		break;
+		} else {
+    	    output += a;
+		}
+	}
     string key;
-    while (!(cin.get() == '\n')) {
-        key += cin.get();
-    }
+    while (a = cin.get()) {
+    	if (a == '\n') {
+    		break;
+		} else {
+    	    key += a;
+		}
+	}
 
     for(int j = 0; j < key.size(); j++) {
         if ((key[j] < int('a') || key[j] > int('z')) && (key[j] < int('A') || key[j] > int('Z'))) {
