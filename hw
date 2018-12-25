@@ -8,12 +8,12 @@ int shift(char);
 int main() {
     string output;
     while (!(cin.get() == '\n')) {
-    	output += cin.get();
-	}
+        output += cin.get();
+    }
     string key;
     while (!(cin.get() == '\n')) {
-    	key += cin.get();
-	}
+        key += cin.get();
+    }
 
     for(int j = 0; j < key.size(); j++) {
         if ((key[j] < int('a') || key[j] > int('z')) && (key[j] < int('A') || key[j] > int('Z'))) {
