@@ -9,20 +9,20 @@ int main() {
     string output;
     char a;
     while (a = cin.get()) {
-    	if (a == '\n') {
-    		break;
-		} else {
-    	    output += a;
-		}
-	}
+        if (a == '\n') {
+            break;
+        } else {
+            output += a;
+        }
+    }
     string key;
     while (a = cin.get()) {
-    	if (a == '\n') {
-    		break;
-		} else {
-    	    key += a;
-		}
-	}
+        if (a == '\n') {
+            break;
+        } else {
+            key += a;
+        }
+    }
 
     for(int j = 0; j < key.size(); j++) {
         if ((key[j] < int('a') || key[j] > int('z')) && (key[j] < int('A') || key[j] > int('Z'))) {
