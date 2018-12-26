@@ -38,15 +38,17 @@ int main() {
     for (int i = 0, j = 0; i < output.size(); i++, j++) {
         if (j >= key.size()) {
             j = 0;
-		}
-		
+        }
+        	
         if (output[i] >= int('a') && output[i] <= int('z')) {
             output[i] = (int(output[i]) - int('a') + shift(key[j])) % 26 + int('a');
-		} else if (output[i] >= int('A') && output[i] <= int('Z')) {
-			output[i] = (int(output[i]) - int('A') + shift(key[j])) % 26 + int('A');
-		}
+        } else if (output[i] >= int('A') && output[i] <= int('Z')) {
+            output[i] = (int(output[i]) - int('A') + shift(key[j])) % 26 + int('A');
+        }
     }
     cout << output;
+    
+    
 }
 
 int shift(char c) {
